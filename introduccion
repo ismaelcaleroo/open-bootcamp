@@ -1,0 +1,47 @@
+En el primer ejercicio te pide:
+- Crear una función con tres parámetros que sean números que se suman entre sí.
+- Llamar a la función en el main y darle valores.
+
+class Suma {
+    public static int sumaNumeros(int a, int b, int c) {
+        return a + b + c;
+    }
+    
+    public static void main(String[] args) {
+        int resultado = sumaNumeros(1, 2, 3);
+        System.out.println("La suma es: " + resultado);
+    }
+}
+
+
+En el segundo ejercicio te pide:
+- Crear una clase coche.
+- Dentro de la clase coche, una variable numérica que almacene el número de puertas que tiene.
+- Una función que incremente el número de puertas que tiene el coche.
+- Crear un objeto miCoche en el main y añadirle una puerta.
+- Mostrar el número de puertas que tiene el objeto.
+
+
+class Coche {
+    private int numPuertas;
+    
+    public Coche(int numPuertas) {
+        this.numPuertas = numPuertas;
+    }
+    
+    public void agregarPuerta() {
+        this.numPuertas++;
+    }
+    
+    public int getNumPuertas() {
+        return this.numPuertas;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Coche miCoche = new Coche(4);
+        miCoche.agregarPuerta();
+        System.out.println("El número de puertas en miCoche es: " + miCoche.getNumPuertas());
+    }
+}
